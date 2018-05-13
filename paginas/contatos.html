@@ -6,51 +6,128 @@
 	<meta name="author" content="Breno Morais">
 	<meta name="description" content="Criação de um site de notícias">
 	<meta name="keywords" content="sites, web, desenvolvimento, noticias">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilocontatos.css">
 </head>
 	<body>
 		<div id="interface">
 			<header id="titulo">
 				<br/><br/>
 				<h1>As útlimas notícias</h1>
-				<img id="logo" src="imagens/logo.png"/>
+				<img id="logo" src="../imagens/logo.png"/>
 				<nav id=menu>
 					<h1>Menu principal</h1>
 					<ol>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="paginas/fotos.html">Fotos</a></li>
-						<li><a href="paginas/videos.html">Vídeos</a></li>
-						<li><a href="paginas/contatos.html">Contatos</a></li>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="fotos.html">Fotos</a></li>
+						<li><a href="videos.html">Vídeos</a></li>
+						<li><a href="contatos.html">Contatos</a></li>
 				    </ol>
 				</nav>
 			</header>
 
+			<section id="unica">
+			<form method="post" id="formContato" action="">
+				<fieldset id="usuario">
+					<legend>Identificação do Usuário</legend>
+					<p>
+						<label for="cNome">Nome:</label>
+						<input type="text" id="cNome" name="txtNome" size="50"
+							maxlength="45" placeholder="Digite seu nome"/>
+					</p>
 
+					<p>
+					<label for="cSenha">Senha:</label>
+					<input type="password" id="cSenha" name="txtSenha" size="8" maxlength="8"/>
+					</p>
 
-		
+					<p>
+						<label for="cEmail">Email:</label>
+						<input type="email" id="cEmail" name="txtEmail" size="40"
+							maxlength="35" placeholder="Digite seu email"/>
+					</p>
+
+					<fieldset id="sexo">
+						<legend>Sexo:</legend>
+						<input type="radio" name="txtSexo" id="cMasc" />
+						<label for="cMasc">Masculino</label>
+						<input type="radio" name="txtSexo" id="cFem" />
+						<label for="cFem">Feminino</label>
+					</fieldset>
+					<p>
+						<label for="cNasc">Data de Nascimento:</label>
+						<input type="date" id="cNasc" name="txtNasc" />
+					</p>
+				</fieldset>
+
+				<fieldset id="endereco">
+					<legend>Endereço do Usuário</legend>
+					<p>
+						<label for="cEnd">Endereço:</label>
+						<input type="text" id="cEnd" name="txtEnd" size="50"
+							maxlength="45" placeholder="Av, Rua, Travessa..."/>
+					</p>
+					<p>
+						<label for="cNum">Número:</label>
+						<input type="number" id="cNum" name="txtNum" min="0" max="999"/>
+					</p>
+					<p>
+						<label for="cEst">Estado:</label>
+						<select name="txtEst" id="cEst">
+							<optgroup label="Região Sudeste">
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="MG" selected>Minas Gerais</option>
+								<option value="SP">São Paulo</option>
+								<option value="DF">Brasília</option>
+							</optgroup>							
+						</select>
+					</p>
+
+					<p>
+						<label for="cCid">Cidade:</label>
+						<input type="text" name="txtCid" id="cCid" list="cidades" />
+						<datalist id="cidades">
+							<option value="Passos" />
+							<option value="Itaú" />
+							<option value="Pratapólis" />
+						</datalist>
+					</p>
+				</fieldset>
+				
+				<fieldset id="mensagem">
+					<legend>Mensagem do Usuário</legend>
+					<p> 
+						Grau de urgência:
+						Min<input type="range" name="txtUrg" id="cUrg" min="0" max="10" step="2">Max
+					</p>
+					<p>
+						<label for="cMsg">Mensagem:</label>
+						<textarea cols="45" rows="5"></textarea>
+					</p>
+					<p>
+						<input type="checkbox" name="txtRecEmail" id="cRecEmail" checked />
+						Gostaria de receber email sobre as notícias
+					</p>
+				</fieldset>
+					<input type="submit" value="Enviar" />
+					<input type="reset" value="Limpar" />
+				</form>
+			</section>		
 
 			<footer id="rodape">
 				<ol class="itemLink">
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>
-					<li><a href="paginas/construcao.html">Fale Conosco</a></li>			
+					<li><a href="construcao.html">Fale Conosco</a></li>
+					<li><a href="construcao.html">Fale Conosco</a></li>
+					<li><a href="construcao.html">Fale Conosco</a></li>
+					<li><a href="construcao.html">Fale Conosco</a></li>
+					<li><a href="construcao.html">Fale Conosco</a></li>
 				</ol>
 
 				<nav id="redes">
 					<ol>
-						<li><a href="paginas/construcao.html"><img src="imagens/rede.png" /></a></li>
-						<li><a href="paginas/construcao.html"><img src="imagens/rede.png" /></a></li>
-						<li><a href="paginas/construcao.html"><img src="imagens/rede.png" /></a></li>
+						<li><a href="construcao.html"><img src="../imagens/rede.png" /></a></li>
+						<li><a href="construcao.html"><img src="../imagens/rede.png" /></a></li>
+						<li><a href="construcao.html"><img src="../imagens/rede.png" /></a></li>
 					</ol>
 				</nav>
 

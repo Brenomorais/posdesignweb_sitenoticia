@@ -258,6 +258,9 @@ footer#rodape div.rodapeFinal{
 	top:1100px;
 }
 
-
-
 /* Fim: Regras de estilo do rodapé  - rodapé */
+
+section#construcao{
+	font: 12pt Arial, sans-serif;
+	text-align: center;	
+}
