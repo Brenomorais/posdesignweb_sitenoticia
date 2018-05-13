@@ -75,4 +75,65 @@ header#titulo nav#menu:hover{
 	color: white;
 	text-decoration:underline;
 }
+
 /* Fim: Regras de estilo do cabeçalho - header */
+
+
+/* Inicio: Regras de estilo da seção  - esquerda */
+
+section#esquerda{
+	display: block;
+	width: 350px;
+	float: left;
+	padding-top: 10px: 
+	padding-left:10px;
+	border-right: 1px dashed rgba(0,0,0,0.3);
+}
+
+section#esquerda article.noticia{
+	font: 10px, Arial, sans-serif;
+	text-align: justify;
+}
+
+section#esquerda article.noticia h2.titulo{
+	font: inherit;
+	background-color: #ccc9ca;
+	padding: 10px;
+	font-weight: bold;
+	font-style: italic;
+	border-radius: 10px;
+}
+
+section#esquerda article.noticia h2.descricao{
+	font: 8pt Arial, sans-serif;
+	line-height: 15px;
+}
+
+/* Fim: Regras de estilo da seção  - esquerda */
+
+/* Inicio: Regras de estilo da seção  - meio */
+
+section#meio{
+	display: block;
+	width: 450px;
+	float: left;
+	padding-top:10px; 
+	padding-left: 10px;
+	border-right: 1px dashed rgba(0,0,0,0.3);
+}
+
+/* Fim: Regras de estilo da seção  - meio */
+
+/* Inicio: Regras de estilo da barra lateral aside  - direita */
+
+
+aside#direita{
+	display: block;
+	width: 250px;
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+	height: 700px;
+}
+
+/* Inicio: Regras de estilo da barra lateral aside  - direita */
